@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DingTalkDelete</string>
+    <string name="btnGetUserName">获取用户名</string>
+    <string name="getUserInfo">获取用户信息</string>
+    <string name="txtSeleteAll">全选</string>
+    <string name="txtSeletectAllRev">反选</string>
+    <string name="txtCancel">取消</string>
+    <string name="txtGetDentryInfo">获取文件</string>
+    <string name="txtGetCacheDentryInfo">获取缓存</string>
+    <string name="txtClearDentryInfo">清除缓存</string>
+    <string name="txtDeleteDentryInfo">删除文件</string>
+    <string name="txtShowAll">所有文件</string>
+    <string name="txtShowUser">用户文件</string>
+</resources>

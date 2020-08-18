@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.my.dingtalkdelete.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/getUserInfo"
+                android:id="@+id/btnGetUserInfo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvUserInfo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtGetDentryInfo"
+                android:id="@+id/btnGetDentryInfo"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtGetCacheDentryInfo"
+                android:id="@+id/btnGetCacheDentryInfo"
+                android:enabled="false"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtClearDentryInfo"
+                android:id="@+id/btnClearDentryInfo"
+                tools:ignore="ButtonStyle"
+                android:visibility="gone"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtDeleteDentryInfo"
+                android:id="@+id/btnDeleteDentryInfo"
+                android:enabled="false"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtShowUser"
+                android:id="@+id/btnShowAll"
+                android:enabled="false"
+                tools:ignore="ButtonStyle"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lvDentryInfo"
+                android:layout_alignParentTop="true"
+                android:layout_above="@id/ll_edit_bar"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@id/lvDentryInfo"
+                android:background="@color/colorPrimary"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_edit_bar"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtSeleteAll"
+                    android:id="@+id/btnSeletectAll"
+                    tools:ignore="ButtonStyle" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtSeletectAllRev"
+                    android:id="@+id/btnSeletectAllRec"
+                    tools:ignore="ButtonStyle" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtCancel"
+                    android:id="@+id/btnCancel"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
